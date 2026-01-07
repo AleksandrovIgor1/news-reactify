@@ -14,6 +14,7 @@ function Main() {
             try {
                 const response = await getNews(currentPage, pageSize)
                 setNews(response.news)
+                setIsLoading(false)
             } catch (error) {
                 console.log(error)
             }
