@@ -22,8 +22,8 @@ function Main() {
     }, [])
     return (
     <main className={styles.main}>
-        {news.length > 0 && !isLoading ? <NewsBanner item={news[0]}/> : <Skeleton type='banner' count={1}/>}
-        {!isLoading ? <NewsList news={news}/> : <Skeleton count={10} type='item'/>}
+        {news.length > 0 ? <NewsBanner item={news[0]}/> : null}
+        <NewsList news={news} />
     </main>
     )
 }
