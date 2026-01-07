@@ -1,16 +1,26 @@
-.header {
+.pagination {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    padding: 12px 24px;
-    background-color: #fff;
-    border-bottom: 1px solid #F2F4F5;
-    flex-direction: column;
     gap: 12px;
 }
-.title {
-    font-size: 28px;
+.pageNumber, .arrow {
+    border: none;
+    background-color: white;
+    cursor: pointer;
 }
 
-.date {
-    font-size: 16px;
+.pageNumber:disabled, .arrow:disabled {
+    cursor: default;
+}
+
+.pageNumber {
+    padding: 8px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
