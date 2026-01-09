@@ -1,11 +1,11 @@
-import { formatDate } from "../../helpers/formatDate"
-import styles from './styles.module.css';
+import { formatDate } from "../../helpers/hooks/formatDate";
+import styles from "./styles.module.css";
 const Header = () => {
-    return (
-        <header className={styles.header}>
-            <h1 className={styles.title}>Good morning</h1>
-            <p className={styles.date}>{formatDate(new Date())}</p>
-        </header>
-    )
-}
-export default Header
+  return (
+    <header className={styles.header}>
+      <h1 className={styles.title}>Good morning</h1>
+      <p className={styles.date}>{formatDate(new Date())}</p>
+    </header>
+  );
+};
+export default Header;
