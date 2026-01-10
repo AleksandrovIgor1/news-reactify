@@ -4,9 +4,28 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: 'Inter', 'sans-serif';
+  font-family: "Inter", "sans-serif";
 }
 .container {
   padding: 24px;
   min-height: 100vh;
+}
+.app.dark .container {
+  background-color: #23272f;
+}
+
+.app.light .container {
+  background-color: #fff;
+}
+
+.app.dark p,
+.app.dark h3,
+.app.dark h1 {
+  color: #f6f7f9;
+}
+
+.app.dark p,
+.app.dark h3,
+.app.dark h1 {
+  color: #000;
 }

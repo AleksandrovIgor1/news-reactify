@@ -5,10 +5,11 @@ import Categories from "../Categories/Categories";
 import Search from "../Search/Search";
 import Slider from "../Slider/Slider";
 import type { CategoriesApiResponse, IFilters } from "../../interfaces";
+import { useTheme } from "../../context/ThemeContext";
 
 interface Props {
   filters: IFilters;
-  changeFilter: (key: string, value: string | null | number) => void
+  changeFilter: (key: string, value: string | null | number) => void;
 }
 
 const NewsFilters = ({ filters, changeFilter }: Props) => {

@@ -1,12 +1,20 @@
 .search {
-    display: flex;
-    width: 100%;
-    background-color: #fff;
-    gap: 12px;
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  gap: 12px;
 }
 .input {
-    width: 100%;
-    padding: 6px 10px;
-    border: 1px solid #f2f3f5;
-    border-radius: 12px;
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #f2f3f5;
+  border-radius: 12px;
+}
+
+.light {
+  background-color: #fff;
+}
+
+.dark {
+  background-color: #23272f;
 }
