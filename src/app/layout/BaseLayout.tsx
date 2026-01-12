@@ -1,3 +1,4 @@
+
 import { useTheme } from "@/app/providers/ThemeProvider";
 import { MainPage } from "@/pages/main";
 import { Header } from "@/widgets/header/ui";
